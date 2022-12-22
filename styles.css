@@ -255,7 +255,7 @@ color: var(--color-Strongcyan);
         justify-content: center;
         align-items: center;
     }
-    
+
 }
 
 @media (min-width:1024px) {
@@ -296,6 +296,10 @@ color: var(--color-Strongcyan);
     .reset-btn-container{
         display: grid;
         align-items: flex-end;
+    }
+
+    .first-input:hover , .button:hover, .custom:hover, .Number-of-People:hover, .Reset-button:hover{
+        cursor: pointer;
     }
     
 }
