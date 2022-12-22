@@ -297,6 +297,9 @@ background-color: var(--color-Strongcyan);
         display: grid;
         align-items: flex-end;
     }
+    .tip_total{
+        font-size: 1rem;
+    }
 
     .first-input:hover , .button:hover, .custom:hover, .Number-of-People:hover, .Reset-button:hover{
         cursor: pointer;
