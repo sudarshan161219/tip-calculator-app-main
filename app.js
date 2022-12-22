@@ -35,6 +35,7 @@ pointZero = `0.${e.target.value}`
    let finalTotal = (Math.round(addTotal * 100) / 100).toFixed(2);
     tipAmount.textContent = `$${finalTipTotal}`;
     totalAmount.textContent = `$${finalTotal}`;
+    resetBtn.classList.add('recolor')
 }else{
     return;
 }  
@@ -71,6 +72,8 @@ eachperson.addEventListener('input', (e) =>{
    let finalTotal = (Math.round(addTotal * 100) / 100).toFixed(2);
     tipAmount.textContent = `$${finalTipTotal}`;
     totalAmount.textContent = `$${finalTotal}`;
+    resetBtn.classList.add('recolor')
+
         }else{
             return;
         }
@@ -78,6 +81,9 @@ eachperson.addEventListener('input', (e) =>{
 
 });
 
+// if(tipAmount.textContent && totalAmount.textContent){
+//     resetBtn.classList.add('recolor')
+// }
 
 resetBtn.addEventListener("click", ()=>{
     bill.value = "";
@@ -85,4 +91,6 @@ resetBtn.addEventListener("click", ()=>{
     custom.value= "";
     tipAmount.textContent = 0;
     totalAmount.textContent = 0;
+    resetBtn.classList.remove('recolor')
+
 })

@@ -109,7 +109,7 @@ gap: 3rem;
 }
 
 .first-input, .Number-of-People{
-    font-weight: 700;
+
     color: var(--color-Verydarkcyan);
     font-size: 2rem;
     text-align: right;
@@ -148,7 +148,7 @@ gap: 3rem;
     text-align: center;
 }
 .custom{
-    font-weight: 700;
+
     text-align: right;
     box-sizing: border-box;
     padding: 0 1rem;
@@ -210,7 +210,7 @@ color: var(--color-Strongcyan);
 .Reset-button{
     font-weight: 700;
     text-transform: uppercase;
-    background-color: var(--color-Strongcyan);
+    background-color: var(--color-Verydarkcyan);
     color: var(--color-Verydarkcyan);
     padding: 1rem 0;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -221,9 +221,8 @@ color: var(--color-Strongcyan);
     width:100%;
 }
 
-.Reset-button:focus{
-    background-color: var(--color-Strongcyan);
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+.recolor{
+background-color: var(--color-Strongcyan);
 }
 
 .Reset-button:active{
@@ -250,6 +249,7 @@ color: var(--color-Strongcyan);
 
 @media (min-width: 768px)  {
     body {
+        height: 100vh;
         display: grid;
         flex-direction: column;
         justify-content: center;
